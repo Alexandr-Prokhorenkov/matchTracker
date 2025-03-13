@@ -18,12 +18,3 @@
   --font-main: 'Inter', sans-serif;
   --font-logo: 'Tactic Sans', sans-serif;
 }
-
-html,
-body {
-  font-family: 'Inter', sans-serif;
-}
-
-h1 {
-  font-family: 'Tactic Sans', sans-serif;
-}
