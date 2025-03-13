@@ -1,29 +1,25 @@
 import { FC } from "react";
-import { GlobalSvgSelector } from "../../assets/icons/GlobalSvgSelector";
 import { Match } from "../../shared/api/types";
 import { CardStatus } from "../../shared/ui/CardStatus/CardStatus";
 import styles from "./Card.module.scss";
+import { TeamDisplay } from "./TeamDisplay/TeamDisplay";
 
 interface CardProps {
   match: Match;
 }
 
 export const Card: FC<CardProps> = ({ match }) => {
-  console.log(match)
+  console.log(match);
   return (
     <div className={styles.container}>
-      <div className={styles.homeTaem}>
-        <GlobalSvgSelector id="team-icon" />
-        <p className={styles.teamName}>{match.homeTeam.name}</p>
-      </div>
+      <TeamDisplay name={match.homeTeam.name} isIconBefore={true} />
       <div className={styles.count}>
-        <p className={styles.countNumbers}>{match.homeScore} : {match.awayScore}</p>
+        <p className={styles.countNumbers}>
+          {match.homeScore} : {match.awayScore}
+        </p>
         <CardStatus status={match.status} />
       </div>
-      <div className={styles.awayTeam}>
-        <p className={styles.teamName}>{match.awayTeam.name}</p>
-        <GlobalSvgSelector id="team-icon" />
-      </div>
+      <TeamDisplay name={match.awayTeam.name}/>
     </div>
   );
 };

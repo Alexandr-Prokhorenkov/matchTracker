@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Tactic Sans';
-  src: url('/src/assets//fonts/TacticSans-MedIt.woff2') format('woff2');
+  src: url('/src/assets//fonts/TacticSans-BlkIt.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,13 +10,13 @@
 :root {
   --background-color: #090909;
   --text-color: #FFFFFF;
-  --error-color: #EB0237;
-  --error-hover-color: #A01131;
-  --error-disabled-coloe: #701328;
-  --status-live-color: #43AD28;
-  --status-preparing-color: #EB6402;
+  --error-color: rgba(235, 2, 55, 1);
+  --error-hover-color: rgba(160, 17, 49, 1);
+  --error-disabled-color: rgba(112, 19, 40, 1);
+  --status-live-color: rgba(67, 173, 40, 1);
+  --status-preparing-color: rgba(235, 100, 2, 1);
   --font-main: 'Inter', sans-serif;
-  --font-secondary: 'Tactic Sans', sans-serif;
+  --font-logo: 'Tactic Sans', sans-serif;
 }
 
 html,

@@ -6,15 +6,16 @@ import styles from './Header.module.scss'
 interface HeaderProps {
   fetchMatches: () => void;
   error: string | null;
+  isLoading: boolean;
 }
 
-export const Header: FC<HeaderProps> = ({ fetchMatches, error }) => {
+export const Header: FC<HeaderProps> = ({ fetchMatches, error, isLoading }) => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>Match Tracker</div>
       <div className={styles.content}>
       {error && <ErrorMessage text={error}/>}
-      <UppdateButton fetchMathes={fetchMatches}/>
+      <UppdateButton fetchMatches={fetchMatches} isLoading={isLoading}/>
       </div>
     </div>
   )
