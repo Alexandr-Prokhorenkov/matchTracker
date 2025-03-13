@@ -1,0 +1,29 @@
+@import 'normalize.css';
+
+@font-face {
+  font-family: 'Tactic Sans';
+  src: url('/src/assets//fonts/TacticSans-MedIt.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background-color: #090909;
+  --text-color: #FFFFFF;
+  --error-color: #EB0237;
+  --error-hover-color: #A01131;
+  --error-disabled-coloe: #701328;
+  --status-live-color: #43AD28;
+  --status-preparing-color: #EB6402;
+  --font-main: 'Inter', sans-serif;
+  --font-secondary: 'Tactic Sans', sans-serif;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-family: 'Tactic Sans', sans-serif;
+}

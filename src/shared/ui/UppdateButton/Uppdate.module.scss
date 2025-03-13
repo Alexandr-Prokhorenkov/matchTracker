@@ -1,0 +1,54 @@
+.button {
+  all: unset; /* Полностью сбрасывает стандартные стили кнопки */
+  display: inline-flex; /* Делаем кнопку адаптивной по содержимому */
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1; /* Убираем дополнительные отступы от текста */
+  background-color: var(--error-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  max-height: 56px;
+}
+
+.button > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0; /* Убираем любые возможные внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
+  line-height: 1; /* Сбрасываем лишнюю высоту текста */
+}
+
+.button > svg {
+  width: 26px;
+  height: 26px;
+  margin-left: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--error-hover-color);
+}
+
+.button:hover svg {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

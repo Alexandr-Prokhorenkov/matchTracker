@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 36px;
+}
+
+.homeTaem {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.awayTeam {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+
+.teamName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.countNumbers {
+  font-size: 20px;
+  font-weight: 600;
+}

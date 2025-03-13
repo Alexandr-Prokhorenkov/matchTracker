@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-height: 56px;
+  box-sizing: border-box;
+}
