@@ -58,7 +58,7 @@ export const GlobalSvgSelector = ({ id }: GlobalSvgSelectorProps) => {
           <path
             d="M22.5 6.52073C23.4282 5.98483 24.5718 5.98483 25.5 6.52073L38.8205 14.2113C39.7487 14.7472 40.3205 15.7376 40.3205 16.8094V32.1906C40.3205 33.2624 39.7487 34.2528 38.8205 34.7887L25.5 42.4793C24.5718 43.0152 23.4282 43.0152 22.5 42.4793L9.17949 34.7887C8.25129 34.2528 7.67949 33.2624 7.67949 32.1906V16.8094C7.67949 15.7376 8.25129 14.7472 9.17949 14.2113L22.5 6.52073Z"
             stroke="url(#paint1_linear_72_663)"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <rect
             x="14"
@@ -81,8 +81,8 @@ export const GlobalSvgSelector = ({ id }: GlobalSvgSelectorProps) => {
               y2="48.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#CF1C51" />
-              <stop offset="1" stop-color="#AF1947" />
+              <stop stopColor="#CF1C51" />
+              <stop offset="1" stopColor="#AF1947" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_72_663"
@@ -92,8 +92,8 @@ export const GlobalSvgSelector = ({ id }: GlobalSvgSelectorProps) => {
               y2="44.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FEE3A2" />
-              <stop offset="1" stop-color="#F2A768" />
+              <stop stopColor="#FEE3A2" />
+              <stop offset="1" stopColor="#F2A768" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_72_663"
@@ -103,8 +103,8 @@ export const GlobalSvgSelector = ({ id }: GlobalSvgSelectorProps) => {
               y2="32.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FEE3A2" />
-              <stop offset="1" stop-color="#F2A768" />
+              <stop stopColor="#FEE3A2" />
+              <stop offset="1" stopColor="#F2A768" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_72_663"
@@ -114,10 +114,27 @@ export const GlobalSvgSelector = ({ id }: GlobalSvgSelectorProps) => {
               y2="28.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FEE3A2" />
-              <stop offset="1" stop-color="#F2A768" />
+              <stop stopColor="#FEE3A2" />
+              <stop offset="1" stopColor="#F2A768" />
             </linearGradient>
           </defs>
+        </svg>
+      );
+    case "arrow":
+      return (
+        <svg
+          width="14"
+          height="9"
+          viewBox="0 0 14 9"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.57157 6.09242L7.00588 6.6581L6.4402 6.09242L1.91353 1.56575C1.78113 1.43335 1.53854 1.42344 1.38461 1.56942C1.24566 1.71222 1.24687 1.93801 1.38824 2.07938L6.74323 7.43438C6.88581 7.57696 7.11428 7.57696 7.25686 7.43438L12.6119 2.07938C12.7544 1.9368 12.7544 1.70833 12.6119 1.56575C12.4693 1.42317 12.2408 1.42317 12.0982 1.56575L7.57157 6.09242Z"
+            fill="white"
+            stroke="white"
+            strokeWidth="1.6"
+          />
         </svg>
       );
   }

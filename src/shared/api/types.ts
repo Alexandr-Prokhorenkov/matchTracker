@@ -1,9 +1,9 @@
-interface Player {
+export interface Player {
   username: string;
   kills: number;
 }
 
-interface Team {
+export interface Team {
   name: string;
   place: number;
   players: Player[];

@@ -1,0 +1,29 @@
+.container {
+  padding: 14px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.playersWrapper {
+  display: flex;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(16, 19, 24, 1);
+
+}
+
+.text {
+  color: rgba(250, 250, 250, 0.4);
+
+}
+
+.value {
+  color: var(--text-color);
+}

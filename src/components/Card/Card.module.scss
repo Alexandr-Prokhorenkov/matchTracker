@@ -16,6 +16,19 @@
   align-items: center;
 }
 
+.awayTeamWrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
 
 .teamName {
   font-size: 16px;
