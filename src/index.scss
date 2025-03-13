@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Tactic Sans';
+  src: url('/src/assets//fonts/TacticSans-MedIt.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-family: 'Tactic Sans', sans-serif;
+}
