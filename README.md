@@ -1,4 +1,4 @@
-# Тестовое задание на позицию Frontend junior в Mindbox
+# Тестовое задание на позицию Frontend-разработчик
 
  [Задание](https://docs.google.com/document/d/1TO9k9aKPClI5ms2vJmCeChIgXLTpMF0C9fs4kZa9bQk/edit?tab=t.0).
 
