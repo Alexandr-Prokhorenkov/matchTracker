@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { ErrorMessage } from "@shared/ui/ErrorMessage/ErrorMessage";
-import { UpdateButton } from "@/shared/ui/UppdateButton/UppdateButton";
+import { UpdateButton } from "@/shared/ui/UpdateButton/UpdateButton";
 import styles from "@components/Header/Header.module.scss";
 
 interface HeaderProps {

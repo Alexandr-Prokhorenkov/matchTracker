@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { GlobalSvgSelector } from "@/assets/icons/GlobalSvgSelector";
-import styles from "./Uppdate.module.scss";
+import styles from "./Update.module.scss";
 
 type UpdateButtonProps = {
   fetchMatches: () => void;
