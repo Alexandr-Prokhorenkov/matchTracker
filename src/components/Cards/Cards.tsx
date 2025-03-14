@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { Match } from '../../shared/api/types'
-import styles from './Cards.module.scss'
-import { Card } from '../Card/Card'
+import { Card } from '@components/Card/Card'
+import { Match } from '@/shared/api/types'
+import styles from '@components/Cards/Cards.module.scss'
 
 interface CardsProps {
   matches: Match[]

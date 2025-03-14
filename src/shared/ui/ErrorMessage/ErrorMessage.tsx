@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { GlobalSvgSelector } from '../../../assets/icons/GlobalSvgSelector'
 import styles from './ErrorMessage.module.scss'
+import { GlobalSvgSelector } from '@/assets/icons/GlobalSvgSelector'
 
 interface ErrorMessageProps {
   text: React.ReactNode

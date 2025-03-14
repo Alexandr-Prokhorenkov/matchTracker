@@ -1,7 +1,7 @@
-import { FC } from 'react'
-import { ErrorMessage } from '../../shared/ui/ErrorMessage/ErrorMessage'
-import { UppdateButton } from '../../shared/ui/UppdateButton/UppdateButton'
-import styles from './Header.module.scss'
+import { FC } from "react";
+import { ErrorMessage } from "@shared/ui/ErrorMessage/ErrorMessage";
+import { UppdateButton } from "@/shared/ui/UppdateButton/UppdateButton";
+import styles from "@components/Header/Header.module.scss";
 
 interface HeaderProps {
   fetchMatches: () => void;
@@ -14,9 +14,9 @@ export const Header: FC<HeaderProps> = ({ fetchMatches, error, isLoading }) => {
     <div className={styles.container}>
       <div className={styles.logo}>Match Tracker</div>
       <div className={styles.content}>
-      {error && <ErrorMessage text={error}/>}
-      <UppdateButton fetchMatches={fetchMatches} isLoading={isLoading}/>
+        {error && <ErrorMessage text={error} />}
+        <UppdateButton fetchMatches={fetchMatches} isLoading={isLoading} />
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { GlobalSvgSelector } from "../../../assets/icons/GlobalSvgSelector";
+import { GlobalSvgSelector } from "@/assets/icons/GlobalSvgSelector";
 import styles from "./Uppdate.module.scss";
 
 type UppdateButtonProps = {

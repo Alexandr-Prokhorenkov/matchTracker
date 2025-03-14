@@ -1,16 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
-import styles from "./App.module.scss";
-import { Header } from "./components/Header/Header";
-import apiService from "./shared/api/ApiService";
-import { Match } from "./shared/api/types";
-import { Cards } from "./components/Cards/Cards";
+import { Match } from "@api/types";
+import apiService from "@api/ApiService";
 
-function App() {
+export const useMatches = () => {
   const [matches, setMatches] = useState<Match[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const fetchMathes = useCallback(async () => {
+  const fetchMatches = useCallback(async () => {
     setIsLoading(true);
     try {
       const data = await apiService.matches.getMatches();
@@ -24,18 +21,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetchMathes();
-  }, [fetchMathes]);
+    fetchMatches();
+  }, [fetchMatches]);
 
-  console.log(matches);
-  return (
-    <>
-      <div className={styles.app}>
-        <Header fetchMatches={fetchMathes} error={error} isLoading={isLoading}/>
-        <Cards matches={matches} />
-      </div>
-    </>
-  );
+  return { matches, error, isLoading, fetchMatches };
 }
-
-export default App;

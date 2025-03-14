@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { Match } from "../../../shared/api/types";
-import styles from "./TeamCards.module.scss";
 import { TeamCard } from "./TeamCard/TeamCard";
+import { Match } from "@/shared/api/types";
+import styles from "./TeamCards.module.scss";
 
 
 interface TeamCardsProps {

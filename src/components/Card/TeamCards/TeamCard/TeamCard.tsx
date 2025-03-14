@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { Team } from "../../../../shared/api/types";
-import styles from "./TeamCard.module.scss";
 import { PlayerCard } from "./PlayerCard/PlayerCard";
+import { Team } from "@/shared/api/types";
+import styles from "./TeamCard.module.scss";
 
 interface TeamCardProps {
   team: Team;

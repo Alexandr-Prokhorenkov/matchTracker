@@ -1,22 +1,4 @@
-@use "./shared//styled/mixins.scss" as *;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-ul, ol {
-  list-style: none;
-}
-
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
+@use "../shared/styled/mixins.scss" as *;
 
 button {
   all: unset;
@@ -28,16 +10,9 @@ button:focus-visible {
   outline: none;
 }
 
-input, textarea {
-  border: none;
-  outline: none;
-  background: transparent;
-  font-family: inherit;
-}
-
-::placeholder {
-  color: gray;
-  opacity: 1;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
