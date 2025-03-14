@@ -2,12 +2,12 @@ import { FC } from "react";
 import { GlobalSvgSelector } from "@/assets/icons/GlobalSvgSelector";
 import styles from "./Uppdate.module.scss";
 
-type UppdateButtonProps = {
+type UpdateButtonProps = {
   fetchMatches: () => void;
   isLoading: boolean;
 };
 
-export const UppdateButton: FC<UppdateButtonProps> = ({
+export const UpdateButton: FC<UpdateButtonProps> = ({
   fetchMatches,
   isLoading,
 }) => {

@@ -1,54 +1,48 @@
-# React + TypeScript + Vite
+# Тестовое задание на позицию Frontend junior в Mindbox
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ [Задание](https://docs.google.com/document/d/1TO9k9aKPClI5ms2vJmCeChIgXLTpMF0C9fs4kZa9bQk/edit?tab=t.0).
 
-Currently, two official plugins are available:
+## Описание проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Простое веб-приложение "Матч-трекер". 
+Загружает список матчей с API.
+Показывает названия команд, счет, статус матча.
+Позволяет обновлять данные по нажатию кнопки "Обновить".
+Отображает индикатор загрузки при запросе данных.
+Показывает сообщение об ошибке, если API недоступно.
 
-## Expanding the ESLint configuration
+## Стек технологий
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React, TypeScript
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Структура проекта
+```
+├── public/               # Статические файлы  
+├── src/  
+│   ├── app/              # Основное приложение  
+│   ├── assets/           # Глобальные ресурсы (иконки, шрифты)  
+│   ├── components/       # UI-компоненты  
+│   ├── hooks/            # Кастомные хуки React  
+│   ├── shared/           # Общие модули (api, утилиты, стили)  
+│   └── styles/           # Глобальные стили  
+├── package.json          # Метаданные проекта  
+├── tsconfig.json         # Конфигурация TypeScript  
+├── vite.config.ts        # Конфигурация Vite  
+└── README.md             # Документация проекта  
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Установка
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Клонировать репозиторий
+git clone https://github.com/Alexandr-Prokhorenkov/matchTracker.git
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+# Перейти в директорию проекта
+cd matchTracker
+
+# Установить зависимости
+npm install
+
+# Запустить приложение
+npm run dev
 ```
