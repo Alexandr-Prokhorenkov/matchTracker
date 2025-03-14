@@ -17,15 +17,15 @@ export const Card: FC<CardProps> = ({ match }) => {
   return (
     <>
       <div className={styles.container}>
-        <TeamDisplay name={match.homeTeam.name} isIconBefore/>
+        <TeamDisplay name={match?.homeTeam?.name} isIconBefore/>
         <div className={styles.count}>
           <p className={styles.countNumbers}>
-            {match.homeScore} : {match.awayScore}
+            {match?.homeScore} : {match?.awayScore}
           </p>
-          <CardStatus status={match.status} />
+          <CardStatus status={match?.status} />
         </div>
         <div className={styles.awayTeamWrapper}>
-          <TeamDisplay name={match.awayTeam.name} />
+          <TeamDisplay name={match?.awayTeam?.name} />
           <button
             className={`${styles.arrow} ${isExpanded ? styles.arrowUp : ""}`}
             onClick={() => setIsExpanded(!isExpanded)}

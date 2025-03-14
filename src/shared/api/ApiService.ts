@@ -1,23 +1,13 @@
-import axios, { AxiosInstance } from "axios";
-import MatchesService from "./MatchesService";
+import axios from "axios";
+import { createMatchesService } from "./MatchesService";
 
-class ApiService {
-  private api: AxiosInstance;
-  matches: MatchesService;
+const api = axios.create({
+  baseURL: "https://app.ftoyd.com/fronttemp-service",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
 
-  constructor() {
-    this.api = axios.create({
-      baseURL: "https://app.ftoyd.com/fronttemp-service",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    this.matches = new MatchesService(this.api);
-  }
-}
-
-const apiService = new ApiService();
-
-export default apiService;
-
+export const apiService = {
+  matches: createMatchesService(api),
+};

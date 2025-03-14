@@ -12,7 +12,7 @@ export const TeamCard: FC<TeamCardProps> = ({ team }) => {
     <div className={styles.container}>
       <div className={styles.playersWrapper}>
         {team.players.map((player) => (
-          <PlayerCard player={player} />
+          <PlayerCard key={player.username} player={player} />
         ))}
       </div>
       <div className={styles.results}>

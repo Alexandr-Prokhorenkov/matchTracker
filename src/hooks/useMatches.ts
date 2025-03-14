@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Match } from "@api/types";
-import apiService from "@api/ApiService";
+import { apiService } from "@/shared/api/ApiService";
+
 
 export const useMatches = () => {
   const [matches, setMatches] = useState<Match[]>([]);

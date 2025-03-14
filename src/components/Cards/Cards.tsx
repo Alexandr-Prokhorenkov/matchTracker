@@ -10,7 +10,7 @@ interface CardsProps {
 export const Cards: FC<CardsProps> = ({matches}) => {
   return (
     <div className={styles.container}>
-      {matches.map(match => <Card key={match.time} match={match}/>)}
+      {matches.map((match, index) => <Card key={index} match={match}/>)}
     </div>
   )
 }
